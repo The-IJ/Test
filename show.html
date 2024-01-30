@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+</head>
+
+<body>
+    <form id="retrieveForm" action="http://localhost:3000/showDetails" method="GET">
+        <label for="username">Enter Username: </label>
+        <input type="text" id="username" name="username">
+        <button type="submit">Retrieve Details</button>
+    </form>
+    <!-- <h2>User Details</h2>
+    <div id="detailsContainer">
+        <p id="fname" name="fname">First Name: <span id="fnameValue" name="fnameValue"></span></p>
+        <p id="lname" name="lname">Last Name: <span id="lnameValue" name="lnameValue"></span></p>
+    </div> -->
+    <!-- <script>
+        async function retrieveDetails() {
+            const username = document.getElementById('username').value;
+
+            try {
+                const response = await fetch(`http://localhost:3000/showDetails?username=${username}`);
+                if (response.ok) {
+                    const details = await response.json();
+                    displayDetails(details);
+                } else {
+                    alert('User not found');
+                }
+            } catch (error) {
+                console.error(error);
+                alert('Error retrieving details');
+            }
+        }
+
+        function displayDetails(details) {
+            const detailsContainer = document.getElementById('detailsContainer');
+            detailsContainer.innerHTML = '';
+
+            for (const key in details) {
+                if (details.hasOwnProperty(key)) {
+                    const detailElement = document.createElement('p');
+                    detailElement.textContent = `${key}: ${details[key]}`;
+                    detailsContainer.appendChild(detailElement);
+                }
+            }
+        }
+    </script> -->
+
+
+</body>
+
+</html>

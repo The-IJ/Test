@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+
+<body>
+    <h1 align="center">Fill details you want to change</h1>
+    <hr>
+    <form action="http://localhost:3000/ed">
+        <fieldset>
+            <legend align="center">
+                <h2><b>You can edit details only on entering valid username and password</b></h2>
+            </legend>
+            <lable for="fname">First Name: </lable>
+            <input type="text" name="fname" id="fname"><br><br>
+            <lable>Last Name: </lable>
+            <input type="text" name="lname" id="lname"><br><br>
+            <lable>User Name: </lable>
+            <input type="text" name="uname" id="uname"><br><br>
+            <lable>Hallticket No: </lable>
+            <input type="text" name="roll" id="roll"><br><br>
+            <lable>Email: </lable>
+            <input type="Email" name="mail" id="mail"><br><br>
+            <lable>Password: </lable>
+            <input type="password" name="pass" id="pass"><br><br>
+            <lable>Course: </lable>
+            <select name="cname" id="cname">
+                <option>AIML</option>
+                <option>CSE</option>
+                <option>IT</option>
+            </select><br><br>
+            <p align="center">
+                <label>Submit</label>
+                <input type="submit" name="sub" id="sub">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Reset</label>
+                <input type="reset" name="re" id="re">
+            </p>
+    </form>
+</body>
+
+</html>
